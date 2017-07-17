@@ -1,0 +1,121 @@
+/* Notes */
+
+/* font-family: 'Open Sans', sans-serif;
+ * There are only two modes: 961 and up = desktop
+ *                           960 and below = phone
+ * It's desktop first because most people using this site will be in a pc
+ * There's and extra one because on 583 and below the gradient in the & gets offset, so I had to fix that
+*/
+
+/****************************************************************************************************************************************************************************************************************************/
+
+/* General */
+
+body {
+	background-color: #111;
+	margin-top: 250px;
+}
+
+/****************************************************************************************************************************************************************************************************************************/
+
+/* Both links */
+
+div {
+	text-align: center;
+}
+
+a, a:visited, a:hover {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	-webkit-transition: color .15s;
+	-moz-transition: color .15s;
+	-ms-transition: color .15s;
+	-o-transition: color .15s;
+	transition: color .15s;
+}
+
+a, a:visited, .and, .seg:visited .and {color: #EEE}
+.github a:hover {color: #999}
+.github {font-size: 32px}
+.youtube {
+	font-size: 72px;
+	margin-top: 100px;
+}
+
+/****************************************************************************************************************************************************************************************************************************/
+
+/* Lower link only */
+
+.strav, .bota, .seg:visited .strav, .seg:visited .bota, .seg:hover .strav, .seg:hover .bota {transition: color .15s}
+.seg:hover .strav {color: #4286F4}
+.seg:hover .bota {color: #EF5A2D}
+.and, .seg:visited .and {
+  background: #EEE;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-ms-background-clip: text;
+	-o-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	-ms-text-fill-color: transparent;
+	-o-text-fill-color: transparent;
+	text-fill-color: transparent;
+}
+
+/* Sadly we don't have gradient transitions yet, and I'm not being able to use the work arounds */
+
+.seg:hover .and {
+  background: -webkit-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
+  background: -moz-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
+	background: -ms-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
+  background: -o-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
+  background: linear-gradient(110deg, #4286F4 44%, #EF5A2D 48%);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-ms-background-clip: text;
+	-o-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	-ms-text-fill-color: transparent;
+	-o-text-fill-color: transparent;
+	text-fill-color: transparent;
+}
+
+/****************************************************************************************************************************************************************************************************************************/
+/****************************************************************************************************************************************************************************************************************************/
+/****************************************************************************************************************************************************************************************************************************/
+
+@media only screen and (max-width: 583px) {
+	.seg:hover .and {
+		background: -webkit-linear-gradient(-20deg, #4286F4 50%, #EF5A2D 54%);
+		background: -moz-linear-gradient(-20deg, #4286F4 50%, #EF5A2D 54%);
+		background: -ms-linear-gradient(-20deg, #4286F4 50%, #EF5A2D 54%);
+		background: -o-linear-gradient(-20deg, #4286F4 50%, #EF5A2D 54%);
+		background: linear-gradient(110deg, #4286F4 50%, #EF5A2D 54%);
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		-ms-background-clip: text;
+		-o-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-text-fill-color: transparent;
+		-ms-text-fill-color: transparent;
+		-o-text-fill-color: transparent;
+		text-fill-color: transparent;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	body {margin-top: 100px}
+	
+	.github, .youtube {padding: 0 10px}
+	
+	.github {font-size: 22px}
+	
+	.youtube {
+		margin-top: 50px;
+		font-size: 54px;
+	}
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<!-- Find non-ascii characters: [^\x00-\x7F]+ -->
+
+<!--
+ - -   ____ _____ ____      ___     __
+ - -  / ___|_   _|  _ \    / \ \   / /
+ - -  \___ \ | | | |_) |  / _ \ \ / /
+ - -   ___) || | |  _ <  / ___ \ V /      ___
+ - -  |____/ |_| |_| \_\/_/   \_\_/      ( _ )
+ - -                                     / _ \/\
+ - -   ____   ___ _____  _              | (_>  <
+ - -  | __ ) / _ \_   _|/ \              \___/\/
+ - -  |  _ \| | | || | / _ \
+ - -  | |_) | |_| || |/ ___ \
+ - -  |____/ \___/ |_/_/   \_\
+ - -
+ -->
+ 
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Carlos Pinto (Pill Time)">
+	<meta name="description" content="Website do canal do youtube Stravinci &#38; Botamilho &#124; https://www.youtube.com/c/stravincibotamilho">
+	<meta name="keywords" content="Stravinci, Botamilho, Strav, Bota, #stravandbota, stravandbota, stravbota, Counter, Strike, CS, GO, CSGO, Youtube, YT">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Stravinci | AutoExec</title>
+
+	<base href="https://pilltime.github.io/" target="_self">
+
+	<link rel="icon" href="things/icos/sbfav.ico">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Oxygen+Mono">
+	<link rel="stylesheet" type="text/css" href="stravandbota/stravauto/index.css">
+
+</head>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<body>
+
+	<div class="down">
+		
+		<p><a href="things/downloads/strav/autoexec.cfg">Download</a></p>
+		
+		<div class="sep"></div>
+		
+		<p class="warn"><span>Aten&#231;&#227;o:</span> Esta autoexec tem a crosshair do Stravinci incluida, ou seja, a crosshair que tiveres vai ser substituida pela que est&#225; neste ficheiro.
+			Para continuares com a tua crosshair, depois de fazeres o download, apaga a sec&#231;&#227;o "<b>//Crosshair</b>", que acaba com "<b>//Fim Crosshair</b>".</p>
+		
+		<div class="sep"></div>
+		
+	</div>
+	
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<div class="content">
+		
+		<pre>
+  clear	
+  echo "Buy Binds:"
+  echo ""
+  echo "+=====================================================+"
+  echo "|     NUM     |      /      |      *      |     -     |"
+  echo "|     PAD     |MOLOTOV/INCEN|  fiveseven  | map menos |"
+  echo "|-------------|-------------|-------------|-----------|"
+  echo "|      7      |      8      |      9      |     +     |"
+  echo "|     HE      |  FLASHBANG  |    SMOKE    |           |"
+  echo "|-------------|-------------|-------------| mapa mais |"
+  echo "|      4      |      5      |      6      |           |"
+  echo "| FAMAS/GALIL |    SCOUT    |     p250    |           |"
+  echo "|-------------|-------------|-------------|-----------|"
+  echo "|      1      |      2      |      3      |   ENTER   |"
+  echo "|    AK/M4    |     AWP     | colete+helm |           |"
+  echo "|-------------|-------------|-------------|  colete   |"
+  echo "|             0             |      .      |           |"
+  echo "|          deagle           |   defuse    |           |"
+  echo "+=====================================================+"
+  echo "p - display damage"
+  echo "F1 - Mute players"
+  echo "F2 - Unmute Players"
+
+
+  bind "x" "+voicerecord"
+  bind "SPACE"        "+jump"
+  bind "mwheeldown"    "+jump"
+  bind "mwheelup"    "+jump"
+  bind "c" "use weapon_knife; use weapon_flashbang"
+  bind "v" "use weapon_knife; use weapon_smokegrenade"
+  bind "z" "use weapon_knife; use weapon_molotov;use weapon_incgrenade;"
+  bind "n"            "radio1"
+  bind ","            "radio2"
+  bind "."            "radio3"
+  bind "b"            "buymenu"
+  bind "F3"            "autobuy"
+  bind "F4"            "rebuy"
+  bind "f"	    "+lookatweapon" 
+
+  bind "F1"  "voice_enable 0;echo damageVOICE_MUTED"
+  bind "F2"  "voice_enable 1;echo damageVOICE_ENABLED"
+
+
+  alias +jumpthrow "+jump;-attack"
+  alias -jumpthrow "-jump"
+
+  bind j +jumpthrow
+
+  unbind f9
+  bind "mouse3"   "use weapon_c4;drop"
+  bind mouse5 r_cleardecals
+
+  //Crosshair
+
+  cl_crosshair_drawoutline "1"
+  cl_crosshair_dynamic_maxdist_splitratio "0.01"
+  cl_crosshair_dynamic_splitalpha_innermod "1"
+  cl_crosshair_dynamic_splitalpha_outermod "0.5"
+  cl_crosshair_dynamic_splitdist "7"
+  cl_crosshair_outlinethickness "1"
+  cl_crosshairalpha "245.000000"
+  cl_crosshaircolor "5"
+  cl_crosshaircolor_b "255"
+  cl_crosshaircolor_g "127"
+  cl_crosshaircolor_r "0"
+  cl_crosshairdot "0"
+  cl_crosshairgap "-1"
+  cl_crosshairgap_useweaponvalue "0"
+  cl_crosshairscale "0"
+  cl_crosshairsize "2.500000"
+  cl_crosshairstyle "5"
+  cl_crosshairthickness "1"
+  cl_crosshairusealpha "1"
+
+  //Fim Crosshair
+
+
+  echo "" //buy binds
+  bind "KP_INS" "buy deagle"
+  bind "-"     "buy hegrenade"
+  bind "KP_DEL"       "buy defuser"
+  bind "KP_PGUP"      "buy smokegrenade"
+  bind "KP_UPARROW"   "buy flashbang" 
+  bind "KP_HOME"      "buy incgrenade;buy molotov"
+  bind "KP_MULTIPLY"  "buy fn57"
+  bind "KP_END"       "buy m4a1;buy ak47"
+  bind "KP_5"         "buy ssg08"  
+  bind "KP_DEL"       "buy defuser"
+  bind "KP_ENTER"     "buy vest"
+  bind "KP_PGDN"      "buy vesthelm"
+  bind "KP_DOWNARROW" "buy awp"
+  bind "KP_LEFTARROW" "buy famas;buy galil"
+  bind "KP_RIGHTARROW" "buy p250"
+
+
+  bind "p" "displaydamage"
+
+  bindtoggle l cl_righthand
+
+  alias displaydamage "displaydamage_on"
+  alias displaydamage_on "con_filter_text Damage; con_filter_text_out Player:; con_filter_enable 2; developer 1; echo "damage_display-ON";alias displaydamage "displaydamage_off"
+  alias displaydamage_off "con_filter_enable 0; developer 0;echo "damage_display-OFF";alias displaydamage "displaydamage_on"
+
+
+
+  bind  "TAB" "+ng"
+  alias "+ng" "+showscores; net_graph 1"
+  alias "-ng" "-showscores; net_graph 0"
+
+  fps_max 300
+  fps_max_menu 120
+  cl_interp 0
+  cl_interp_ratio 1
+  cl_cmdrate 128
+  cl_cmdrate "128"
+  cl_updaterate "128"
+  rate 500000
+  cl_allowdownload 0
+  safezonex 1
+  cl_forcepreload 1
+  cl_disablefreezecam 1
+  mm_dedicated_search_maxping 50
+  cl_disablehtmlmotd 0
+  windows_speaker_config 1
+  cl_use_opens_buy_menu 0
+  cl_bobcycle "0.98"
+  cl_join_advertise 2
+
+
+  // removes the shifting of the arm when crouching down.
+
+  cl_viewmodel_shift_left_amt "0"
+  cl_viewmodel_shift_right_amt "0"
+  cl_bob_lower_amt "10"
+  cl_bobamt_lat "0"
+  cl_bobamt_vert "0"
+
+  //radar
+  cl_radar_always_centered 0
+  cl_radar_scale "0.3"
+  cl_hud_radar_scale "1.15"
+  cl_radar_rotate "0"
+
+  //zoom in-out radar
+  bind "KP_PLUS"      "incrementvar cl_radar_scale 0.25 1.0 0.05"
+  bind "KP_MINUS"     "incrementvar cl_radar_scale 0.25 1.0 -0.05"
+
+
+
+
+
+  echo "EXECUTED: Strav's Config"
+  host_writeconfig
+		</pre>
+		
+	</div>
+
+</body>
+</html>

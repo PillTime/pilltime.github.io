@@ -1,0 +1,82 @@
+/* Notes */
+
+/* font-family: 'Open Sans', sans-serif;
+ * font-family: 'Oxygen Mono', monospace;
+ * Open Sans in 400 and 600
+*/
+
+/****************************************************************************************************************************************************************************************************************************/
+
+/* General */
+
+body {
+	background-color: #111;
+	color: #FFF;
+}
+
+/****************************************************************************************************************************************************************************************************************************/
+
+/* Download Section */
+
+.down {
+	width: 100%;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 8px;
+}
+
+.down p {
+	margin: 16px 5%;
+	font-size: 24px;
+}
+
+.down p a, .down p a:visited, .down p a:hover {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 56px;
+	-webkit-transition: color .2s;
+	-moz-transition: color .2s;
+	-ms-transition: color .2s;
+	-o-transition: color .2s;
+	transition: color .2s;
+}
+
+.down p a, .down p a:visited {color: #FFF}
+
+.down p a:hover {color: #BBB}
+
+.warn {
+	margin: 16px 5% !important;
+}
+
+.warn span {
+	font-weight: 600;
+	font-size: 28px;
+}
+
+.sep {
+	height: 4px;
+	width: 90%;
+	background-color: #666;
+	margin: 32px auto;
+	border-radius: 2px;
+}
+
+/****************************************************************************************************************************************************************************************************************************/
+
+/* Content Section */
+
+.content {
+	margin: 0 5%;
+}
+
+.content pre {
+	font-family: 'Oxygen Mono', monospace;
+	font-size: 14px;
+  word-wrap: break-word;
+  white-space: -webkit-pre-wrap;
+	white-space: -moz-pre-wrap;
+  white-space: -ms-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+}
