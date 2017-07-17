@@ -239,37 +239,19 @@ button:hover {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background-color: #444;
+	height: 64px;
+	overflow: hidden;
+	background-color: #FFF;
 	text-align: center;
-	clip-path: polygon(45% 0, 55% 0, 58% 100%, 42% 100%);
 	z-index: 4;
-	-webkit-transition: -webkit-clip-path .3s;
-	-moz-transition: -moz-clip-path .3s;
-	-ms-transition: -ms-clip-path .3s;
-	-o-transition: -o-clip-path .3s;
-	transition: clip-path .3s;
+	clip-path: polygon(35% 0, 65% 0, 75% 100%, 25% 100%);
 }
 
-.pill p {margin: 12px auto}
-
-.pill p a {
-	color: #888;
-	font-size: 20px;
-	-webkit-transition: color .3s;
-	-moz-transition: color .3s;
-	-ms-transition: color .3s;
-	-o-transition: color .3s;
-	transition: color .3s;
-}
-
-
-.pill p:hover a {
-	color: #FFF !important;
-	-webkit-transition: color .3s;
-	-moz-transition: color .3s;
-	-ms-transition: color .3s;
-	-o-transition: color .3s;
-	transition: color .3s;
+.pill img {
+	width: 720px;
+	position: relative;
+	bottom: 370px;
+	margin: auto;
 }
 
 /****************************************************************************************************************************************************************************************************************************/
