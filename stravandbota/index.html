@@ -39,7 +39,7 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-<body>
+<body class="preload">
 
 	<div class="logo">
 		<a href="https://www.youtube.com/c/stravincibotamilho" target="_self">
@@ -339,6 +339,10 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <script type="text/javascript">
 
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
+	
 function toggle(id) {
 	"use strict";
 	var x = document.getElementById(id).style;

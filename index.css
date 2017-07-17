@@ -16,6 +16,14 @@ body {
 	margin-top: 250px;
 }
 
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
 /****************************************************************************************************************************************************************************************************************************/
 
 /* Both links */
