@@ -50,7 +50,6 @@ body {
 }
 
 .down p a, .down p a:visited {color: #FFF}
-
 .down p a:hover {color: #BBB}
 
 .sep {
@@ -65,9 +64,7 @@ body {
 
 /* Content Section */
 
-.content {
-	margin: 0 5%;
-}
+.content {margin: 0 5%}
 
 .content pre {
 	font-family: 'Oxygen Mono', monospace;

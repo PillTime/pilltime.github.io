@@ -50,12 +50,8 @@ body {
 }
 
 .down p a, .down p a:visited {color: #FFF}
-
 .down p a:hover {color: #BBB}
-
-.warn {
-	margin: 16px 5% !important;
-}
+.warn {margin: 16px 5% !important}
 
 .warn span {
 	font-weight: 600;
@@ -74,9 +70,7 @@ body {
 
 /* Content Section */
 
-.content {
-	margin: 0 5%;
-}
+.content {margin: 0 5%}
 
 .content pre {
 	font-family: 'Oxygen Mono', monospace;

@@ -14,7 +14,6 @@
 body {
 	background-color: #111;
 	color: #FFF !important;
-	
 }
 
 a, a:visited {
@@ -83,18 +82,6 @@ a:hover {
 
 /* Sections */
 
-.stravinci, .botamilho {
-	width: 50%;
-}
-
-.stravinci {
-	float: left;
-}
-
-.botamilho {
-	float: right;
-}
-
 .title {
 	font-size: 78px;
 	font-weight: 600;
@@ -102,8 +89,15 @@ a:hover {
 	text-align: center;
 }
 
+.stravinci, .botamilho {
+	width: 50%;
+	margin-bottom: 78px;
+}
+
 .stravinci .title {color: #4286F4}
 .botamilho .title {color: #EF5A2D}
+.stravinci {float: left}
+.botamilho {float: right}
 
 /****************************************************************************************************************************************************************************************************************************/
 
@@ -143,9 +137,7 @@ button:hover {
 	transition: background-color .2s;
 }
 
-#defvS, #defvB {
-	margin-bottom: 0;
-}
+#defvS, #defvB {margin-bottom: 0}
 
 /****************************************************************************************************************************************************************************************************************************/
 

@@ -28,9 +28,7 @@ body {
 
 /* Both links */
 
-div {
-	text-align: center;
-}
+div {text-align: center}
 
 a, a:visited, a:hover {
 	font-family: 'Open Sans', sans-serif;
@@ -45,6 +43,7 @@ a, a:visited, a:hover {
 a, a:visited, .and, .seg:visited .and {color: #EEE}
 .github a:hover {color: #999}
 .github {font-size: 32px}
+
 .youtube {
 	font-size: 72px;
 	margin-top: 100px;
@@ -57,6 +56,7 @@ a, a:visited, .and, .seg:visited .and {color: #EEE}
 .strav, .bota, .seg:visited .strav, .seg:visited .bota, .seg:hover .strav, .seg:hover .bota {transition: color .15s}
 .seg:hover .strav {color: #4286F4}
 .seg:hover .bota {color: #EF5A2D}
+
 .and, .seg:visited .and {
   background: #EEE;
 	-webkit-background-clip: text;
