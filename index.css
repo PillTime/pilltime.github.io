@@ -58,7 +58,7 @@ a, a:visited, .and, .seg:visited .and {color: #EEE}
 .seg:hover .bota {color: #EF5A2D}
 
 .and, .seg:visited .and {
-  background: #EEE;
+	background: #EEE;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-ms-background-clip: text;
@@ -74,11 +74,11 @@ a, a:visited, .and, .seg:visited .and {color: #EEE}
 /* Sadly we don't have gradient transitions yet, and I'm not being able to use the work arounds */
 
 .seg:hover .and {
-  background: -webkit-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
-  background: -moz-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
+	background: -webkit-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
+	background: -moz-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
 	background: -ms-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
-  background: -o-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
-  background: linear-gradient(110deg, #4286F4 44%, #EF5A2D 48%);
+	background: -o-linear-gradient(-20deg, #4286F4 44%, #EF5A2D 48%);
+	background: linear-gradient(110deg, #4286F4 44%, #EF5A2D 48%);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-ms-background-clip: text;

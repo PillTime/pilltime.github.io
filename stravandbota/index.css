@@ -295,10 +295,10 @@ button:hover {
 		height: 159px;
 		width: 958px;
 		margin: auto;
-    top: -99999px;
-    bottom: -99999px;
-    left: -99999px;
-    right: -99999px;
+		top: -99999px;
+		bottom: -99999px;
+		left: -99999px;
+		right: -99999px;
 		border-radius: 0;
 		-webkit-transition: none !important;
 		-moz-transition: none !important;
@@ -321,12 +321,12 @@ button:hover {
 	}
 	
 	.pill img {
-    position: absolute;
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-    margin: 9629px auto 0; /* Idk where the 9629 came from */
+		position: absolute;
+		top: -9999px;
+		bottom: -9999px;
+		left: -9999px;
+		right: -9999px;
+		margin: 9629px auto 0; /* Idk where the 9629 came from */
 	}
 }
 
@@ -346,10 +346,10 @@ button:hover {
 		height: 133px;
 		width: 800px;
 		margin: auto;
-    top: -10025px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
+		top: -10025px;
+		bottom: -9999px;
+		left: -9999px;
+		right: -9999px;
 		border-radius: 0;
 		-webkit-transition: none !important;
 		-moz-transition: none !important;
