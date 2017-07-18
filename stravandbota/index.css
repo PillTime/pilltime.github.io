@@ -44,7 +44,7 @@ a:hover {
 	transition: none !important;
 }
 
-@media (hover:none), (hover: on-demand) {
+@media (hover:none), (hover: on-demand) { /* Risky, probably won't work */
 	button:hover {background-color: #111}
 }
 
