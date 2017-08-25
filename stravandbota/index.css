@@ -44,10 +44,6 @@ a:hover {
 	transition: none !important;
 }
 
-@media (hover:none), (hover: on-demand) { /* Risky, probably won't work */
-	button:hover {background-color: #111}
-}
-
 /****************************************************************************************************************************************************************************************************************************/
 
 /* Logo */
@@ -240,33 +236,24 @@ button:hover {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 64px;
-	overflow: hidden;
-	background-color: #999;
+	background-color: #111;
 	text-align: center;
 	z-index: 4;
-	clip-path: polygon(35% 0, 65% 0, 75% 100%, 25% 100%);
-	-webkit-transition: background-color .2s;
-	-moz-transition: background-color .2s;
-	-ms-transition: background-color .2s;
-	-o-transition: background-color .2s;
-	transition: background-color .2s;
 }
 
-.pill:hover {
-	background-color: #FFF;
-	-webkit-transition: background-color .2s;
-	-moz-transition: background-color .2s;
-	-ms-transition: background-color .2s;
-	-o-transition: background-color .2s;
-	transition: background-color .2s;
+.pill a {
+	font-size: 32px;
+	margin: 8px auto;
+	display: block;
 }
 
-.pill img {
-	width: 720px;
-	position: relative;
-	bottom: 370px;
-	margin: auto;
+.pill div {
+	display: block;
+	width: 96%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #666;
+	margin: 0 auto;
 }
 
 /****************************************************************************************************************************************************************************************************************************/
@@ -284,9 +271,13 @@ button:hover {
 
 @media only screen and (max-width: 958px) {
 	.stravinci, .botamilho {width: 100%}
-	.botamilho {margin-top: -64px}
 	.title {margin: 34px 0 42px}
-	
+
+	.botamilho {
+		margin-top: -64px;
+		margin-bottom: 48px;
+	}
+
 	.logo {
 		display: block;
 		width: 100%;
@@ -295,7 +286,7 @@ button:hover {
 		position: relative;
 		overflow: hidden;
 	}
-	
+
 	.logo a img {
 		content: url('../things/imgs/banner.png');
 		display: block;
@@ -314,7 +305,7 @@ button:hover {
 		-o-transition: none !important;
 		transition: none !important;
 	}
-	
+
 	.logo a img:hover {
 		border-radius: 0;
 		-webkit-transition: none !important;
@@ -323,33 +314,9 @@ button:hover {
 		-o-transition: none !important;
 		transition: none !important;
 	}
-	
-	.pill {clip-path: polygon(30% 0, 70% 0, 85% 100%, 15% 100%)}
-	
-	.pill img {
-		position: absolute;
-		top: -9999px;
-		bottom: -9999px;
-		left: -9999px;
-		right: -9999px;
-		margin: 9629px auto 0; /* Idk where the 9629 came from */
-	}
-}
 
-/****************************************************************************************************************************************************************************************************************************/
-/****************************************************************************************************************************************************************************************************************************/
-/****************************************************************************************************************************************************************************************************************************/
-
-@media only screen and (max-width: 660px) {
-	.pill {
-		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-		height: 48px;
-	}
-	
-	.pill img {
-		width: 640px;
-		margin: 9663px auto 0; /* Nor the 9663 */
-	}
+	.pill {position: inherit}
+	.pill div {display: flex}
 }
 
 /****************************************************************************************************************************************************************************************************************************/
@@ -362,12 +329,13 @@ button:hover {
 	#rankS p, #rankB p {font-size: 17px !important}
 	.autoexec {font-size: 19px !important}
 	.cross {font-size: 13px}
-	
+	.botamilho {margin-bottom: 24px}
+
 	.title {
 		font-size: 56px;
 		margin: 8px 0 42px;
 	}
-	
+
 	.logo a img {
 		height: 133px;
 		width: 800px;
@@ -383,6 +351,13 @@ button:hover {
 		-o-transition: none !important;
 		transition: none !important;
 	}
+
+	.pill div {
+		height: 2px;
+		border-radius: 1px;
+	}
+
+	.pill a {font-size: 24px}
 }
 
 /****************************************************************************************************************************************************************************************************************************/

@@ -329,22 +329,26 @@
 	</div>
 
 	<!-- Change pointer to site when it's complete -->
-	<a href="https://github.com/PillTime"><div class="pill">
-		<img src="things/imgs/pill.png" alt="Pill Time">
-	</div></a>
+	<div class="pill">
+		<div></div>
+		<a href="https://github.com/PillTime">Pill Time</a>
+	</div>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
 <script type="text/javascript">
 
+"use strict";
+
+// Remove the class that disables transitions on page load
 function trans() {
-	"use strict";
 	document.body.classList.remove("preload");
 }
-	
+
+// Toggle div display on button click
 function toggle(id) {
-	"use strict";
 	var x = document.getElementById(id).style;
 	var y = document.getElementById(id.concat('b')).style;
 	if (x.display === "block") {
