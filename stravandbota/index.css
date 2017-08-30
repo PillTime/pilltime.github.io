@@ -315,6 +315,8 @@ button:hover {
 		transition: none !important;
 	}
 
+	a:hover {color: #FFF}
+	button:hover {background-color: #111}
 	.pill {position: inherit}
 	.pill div {display: flex}
 }
