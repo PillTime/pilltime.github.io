@@ -58,7 +58,7 @@ a:hover {
 	z-index: 2;
 }
 
-.logo a img {
+.logo a > img {
 	width: 96px;
 	height: 96px;
 	border-radius: 50%;
@@ -69,7 +69,7 @@ a:hover {
 	transition: border-radius .3s;
 }
 
-.logo a img:hover {
+.logo a > img:hover {
 	border-radius: 8%;
 	-webkit-transition: border-radius .3s;
 	-moz-transition: border-radius .3s;
@@ -77,6 +77,8 @@ a:hover {
 	-o-transition: border-radius .3s;
 	transition: border-radius .3s;
 }
+
+.logo a img + img {display: none}
 
 /****************************************************************************************************************************************************************************************************************************/
 
@@ -287,8 +289,7 @@ button:hover {
 		overflow: hidden;
 	}
 
-	.logo a img {
-		content: url('../things/imgs/banner.png');
+	.logo a > img {
 		display: block;
 		position: absolute;
 		height: 159px;
@@ -306,7 +307,7 @@ button:hover {
 		transition: none !important;
 	}
 
-	.logo a img:hover {
+	.logo a > img:hover {
 		border-radius: 0;
 		-webkit-transition: none !important;
 		-moz-transition: none !important;
@@ -315,8 +316,12 @@ button:hover {
 		transition: none !important;
 	}
 
+	.logo a img {display: none}
+	.logo a img + img {display: block}
+
 	a:hover {color: #FFF}
 	button:hover {background-color: #111}
+
 	.pill {position: inherit}
 	.pill div {display: flex}
 }
